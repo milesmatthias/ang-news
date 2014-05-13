@@ -7,7 +7,8 @@ var app = angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'firebase'
   ]);
 
 app.config(function ($routeProvider) {
@@ -20,3 +21,5 @@ app.config(function ($routeProvider) {
         redirectTo: '/'
       });
   });
+
+app.constant('FIREBASE_URL', 'https://glaring-fire-3855.firebaseio.com/');
